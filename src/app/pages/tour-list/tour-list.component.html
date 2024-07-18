@@ -1,0 +1,32 @@
+<div class="row">
+  <h2> Tours List</h2>
+</div>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Second Name</th>
+      <th>Third Name</th>
+      <th>Tell Number</th>
+      <th>Visit Name</th>
+      <th>Age</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tour of tours">
+      <td>{{ tour.firstName }}</td>
+      <td>{{ tour.secondName }}</td>
+      <td>{{ tour.thirdName }}</td>
+      <td>{{ tour.tellNumber }}</td>
+      <td>{{ tour.visitName }}</td>
+      <td>{{ tour.age }}</td>
+      <td>
+        <button (click)="updateTour(tour.id)" class="btn btn-primary">Update</button>
+        <button (click)="deleteTour(tour.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+        <button (click)="tourDetails(tour.id)" class="btn btn-primary" style="margin-left: 10px">View</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

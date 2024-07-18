@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'myProject';
+  title = 'Angular + Spring Boot CRUD Full Stack';
+  isLogin: boolean = true; // Initialize isLogin property
+  userEmail: any;
+  userPassword: any;
 }

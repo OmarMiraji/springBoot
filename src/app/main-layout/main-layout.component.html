@@ -1,0 +1,30 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="!(isHandset$ | async)">
+    <mat-toolbar color="primary" class="bar">Menu</mat-toolbar>
+    <mat-nav-list class="nav">
+      <a mat-list-item routerLink="/home">Home</a>
+      <a mat-list-item routerLink="/about-us">About Us</a>
+      <a mat-list-item routerLink="tours">Tours</a>
+      <a mat-list-item routerLink="page">Form</a>
+      <a mat-list-item routerLink="/page">create form</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="top-toolbar">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <h2>Zanzibar Safari Tour</h2>
+      <span class="spacer"></span>
+      <a routerLink="/login">
+        <button mat-button class="sign-out-button">Sign Out</button>
+      </a>
+    </mat-toolbar>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

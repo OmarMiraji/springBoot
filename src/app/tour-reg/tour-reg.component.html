@@ -1,0 +1,64 @@
+<div class="col-md-10 offset-md-1">
+    <h4> Create Customer </h4>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label> First Name:</label>
+                    <input type="text" class ="form-control" id = "firstName"
+                        [(ngModel)] = "tour.firstName" name = "firstName">
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label> Second Name:</label>
+                    <input type="text" class ="form-control" id = "secondName"
+                        [(ngModel)] = "tour.secondName" name = "secondName">
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label> Last Name:</label>
+                    <input type="text" class ="form-control" id = "thirdName"
+                        [(ngModel)] = "tour.thirdName" name = "thirdName">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label> Tell Number:</label>
+                    <input type="text" class ="form-control" id = "tellNumber"
+                        [(ngModel)] = "tour.tellNumber" name = "tellNumber">
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label> Visit:</label>
+                    <input type="text" class ="form-control" id = "visitName"
+                        [(ngModel)] = "tour.visitName" name = "visitName">
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label> Age:</label>
+                    <input type="text" class ="form-control" id = "age"
+                        [(ngModel)] = "tour.age" name = "age">
+                </div>
+            </div>
+        </div>
+
+
+        <p>
+        <div>
+          <button class = "btn btn-success" type ="submit">Submit</button>
+        </div>
+
+    </form>
+    </div>

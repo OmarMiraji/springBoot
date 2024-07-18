@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="card col-md-6 offset-md-3">
+    <div class="row">
+      <h3 class="text-center">Create Tour</h3>
+      <hr />
+      <div class="card-body">
+        <form [formGroup]="formGroup" (ngSubmit)="onsubmit()">
+
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" class="form-control" formControlName="firstName" />
+          </div>
+
+          <div class="form-group">
+            <label>Second Name</label>
+            <input type="text" class="form-control" formControlName="secondName" />
+          </div>
+
+          <div class="form-group">
+            <label>Third Name</label>
+            <input type="text" class="form-control" formControlName="thirdName" />
+          </div>
+
+          <div class="form-group">
+            <label>Tell Number</label>
+            <input type="text" class="form-control" formControlName="tellNumber" />
+          </div>
+
+          <div class="form-group">
+            <label>Visit Name</label>
+            <input type="text" class="form-control" formControlName="visitName" />
+          </div>
+
+          <div class="form-group">
+            <label>Age</label>
+            <input type="text" class="form-control" formControlName="age" />
+          </div>
+
+          <br />
+          <button class="btn btn-success" type="submit" (click)="  saveform()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

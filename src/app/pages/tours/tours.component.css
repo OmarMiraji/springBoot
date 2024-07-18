@@ -1,0 +1,25 @@
+div.gallery {
+    margin: 10px;
+    border: 2px solid #ccc;
+    float: left;
+    width: 470px;
+    height: 390px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+div.gallery:hover {
+    border: 2px solid #777;
+    transform: scale(1.05);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
